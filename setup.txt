@@ -1,0 +1,11 @@
+#make sure the right kernel is instaled for the touchscreen!
+sudo apt-get install raspberrypi-bootloader=1.20150309-1
+
+#grab the go repo
+git clone https://go.googlesource.com/go
+cd go
+#switch to the latest release
+git checkout go1.4.2
+cd src
+./all.bash
+
